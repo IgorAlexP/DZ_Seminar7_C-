@@ -22,14 +22,13 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         {
             if(a == i && b == j)
             {
-                Console.Write($"Элемент массива с номеромстроки {a} и номером столбца {b} => {matrix[i-1, j-1]}");
+                Console.Write($"Элемент массива с номером строки {a} и номером столбца {b} => {matrix[i, j]}");
             }
         }
-    Console.WriteLine();
     }
 if(a >= matrix.GetLength(0) || b >= matrix.GetLength(1))
         {
-            Console.Write("Такого элемента в массиве нет");
+            Console.Write($"Элемента с номером строки {a} и номером столбца {b} в массиве нет");
         }
 
 void PrintArray(int[,] matr)          //метод создания массива чисел
