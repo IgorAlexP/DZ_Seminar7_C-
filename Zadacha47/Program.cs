@@ -7,11 +7,11 @@ Console.Write("Введите количество столбцов m: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество строк n: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int[,] matrix = new int[m, n];
+double[,] matrix = new double[m, n];
 
 PrintArray(matrix);
 
-void PrintArray(int[,] matr)          //метод создания массива чисел
+void PrintArray(double[,] matr)          //метод создания массива чисел
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
